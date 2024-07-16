@@ -32,7 +32,6 @@ function ArticleDetailScreen( props ) {
     if (!article) {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                {/* ChatGPT */}
                 <ActivityIndicator size={{ flex: 1, justifyContent: 'center', marginBottom: 0, marginVertical: 0 }} />
                 <Text style={styles.textStyle}>Loading...</Text>
             </View>
@@ -51,7 +50,6 @@ function ArticleDetailScreen( props ) {
             <Pressable onPress={handlePress}>
                     <Text style={styles.linkText}>Read full article here.</Text>
             </Pressable>
-            {/* ChatGPT lines 54 - 56 */}
             {article.body.map((paragraph, index) => (
                 <Animated.Text key={index} style={[styles.paragraph, { opacity: fadeAnim }]}>
                     {paragraph}

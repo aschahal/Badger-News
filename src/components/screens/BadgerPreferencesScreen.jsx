@@ -7,7 +7,6 @@ function BadgerPreferencesScreen(props) {
 
     return (
         <View style={StyleSheet.container}>
-            {/* ChatGPT */}
             {Object.keys(preferences).map((tag) => (
                 <View key={tag} style={style.preferenceItem}>
                     <Text>{tag}</Text>

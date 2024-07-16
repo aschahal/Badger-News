@@ -17,7 +17,6 @@ function BadgerNewsScreen(props) {
             .then(response => response.json())
             .then(data => {
                 setArticles(data)
-                // ChatGPT lines 21 - 25
                 const uniqueTags = new Set(data.flatMap(article => article.tags));
                 uniqueTags.forEach(tag => {
                     if (preferences[tag] === undefined) {
